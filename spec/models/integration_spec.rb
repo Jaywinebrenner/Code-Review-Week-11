@@ -2,7 +2,7 @@ require 'rails_helper'
 Product.destroy_all
 Review.destroy_all
 
-describe 'will ensure the user does not have admin privilages for product creations', {:type => :feature} do
+describe 'will ensure a non-admin user can create a review', {:type => :feature} do
   it 'takes the user to the homepage where they can create a product' do
     visit '/'
     click_link('Sign up')
