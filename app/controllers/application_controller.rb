@@ -4,8 +4,6 @@ class ApplicationController < ActionController::Base
 
   before_action :configure_permitted_parameters, if: :devise_controller?
 
-
-
   def authorize
     if current_user.admin != true
       flash[:alert] = "Mario didn't grant you permission to use this functionality."
@@ -19,7 +17,6 @@ class ApplicationController < ActionController::Base
       redirect_to request.referrer
     end
   end
-
 
   protected
 

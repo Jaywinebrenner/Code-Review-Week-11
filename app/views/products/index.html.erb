@@ -1,10 +1,8 @@
-<h1>Welcome</h1>
 
 <% if user_signed_in? %>
 
 <%= link_to "Home", '/' %> |
 Logged in as <%= current_user.email %> | <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
-
 
 <div class="header-top">
   <h1 class="header1">Mario's</h1>
@@ -18,11 +16,6 @@ Logged in as <%= current_user.email %> | <%= link_to "Sign out", destroy_user_se
   <div class="row">
     <div class="col-lg-12">
       <h5>Mario's Discount Specialty Foods specializes in specialty foods that are discounted. Mario provides tastebud-tickling specialty ingredients at discoutned rates which right wrongs and disolves trauma. Please support Mario's Discount Specialty Foods by purchasing Mario's discounted specialty products that are guarenteed to be edible.</h5>
-      <!-- <form>
-        <label for="">Search Mario's Products:</label>
-        <input type="text" name="search">
-        <button type="submit" name="button">go</button>
-      </form> -->
     </div>
   </div>
 </div>
@@ -109,8 +102,6 @@ Logged in as <%= current_user.email %> | <%= link_to "Sign out", destroy_user_se
 <%= link_to "Sign in", new_user_session_path %>
 <hr>
 
-
-
 <div class="header-top">
   <h1 class="header1">Mario's</h1>
   <h2 class="header2">Discount Specialty Foods</h2>
@@ -121,12 +112,7 @@ Logged in as <%= current_user.email %> | <%= link_to "Sign out", destroy_user_se
 <div class="container id="about">
   <div class="row">
     <div class="col-lg-12">
-      <h5>Mario's Discount Specialty Foods specializes in specialty foods that are discounted. Mario provides tastebud-tickling specialty ingredients at discoutned rates which right wrongs and disolves trauma. Please support Mario's Discount Specialty Foods by purchasing Mario's discounted specialty products that are guarenteed to be edible.</h5>
-      <!-- <form>
-        <label for="">Search Mario's Products:</label>
-        <input type="text" name="search">
-        <button type="submit" name="button">go</button>
-      </form> -->
+  <h1>Please sign up or sign in to peruse Mario's edible food stuffs.</h1>
     </div>
   </div>
 </div>
@@ -137,7 +123,7 @@ Logged in as <%= current_user.email %> | <%= link_to "Sign out", destroy_user_se
 <hr class="hr-thin">
 <br>
 
-<h1>Please sign up or sign in to peruse Mario's edible food stuffs.</h1>
+
 <br>
 <hr class="hr-thin">
 <% end %>
