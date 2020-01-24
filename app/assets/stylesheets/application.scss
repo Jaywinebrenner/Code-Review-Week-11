@@ -1,0 +1,131 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+#middle-text{
+  padding-top: 8px;
+}
+ img{
+   width: 270px;
+ }
+
+.row{
+  width: 100%;
+   text-align: center;
+}
+#about{
+  width: 300px;
+  text-align: center;
+  background-color:  #eb4d55;
+  display: inline-block;
+margin: 0 auto;
+padding: 3px;
+}
+
+.error{
+  color: #e32249;
+}
+
+h1, h2{
+  color: black;
+  margin: 0px;
+  font-family: 'Patua One', cursive;
+}
+
+h4{
+  color: #eb4d55;
+}
+body {
+  text-align: center;
+}
+
+#create-new_product{
+  font-size: 3rem;
+  color: #eb4d55;
+  text-decoration: none;
+}
+
+#create-new_product:hover{
+  font-size: 3rem;
+  color: #eb4d55;
+  text-decoration: none;
+}
+.hr-thick{
+  background-color: #eb4d55;
+  height: 4px;
+}
+
+.hr-thin{
+  background-color: #eb4d55;
+  height: 2px;
+}
+.bottom{
+  background-color: #eb4d55;
+  text-align: center;
+    height: 180px;
+}
+
+.header-top{
+  background-color: #eb4d55;
+  text-align: center;
+    height: 280px;
+}
+
+.header-middle{
+  background-color: #eb4d55;
+  text-align: center;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.header1{
+  font-size: 6rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 6rem;
+}
+
+.new-header{
+  background-color: #eb4d55;
+  text-align: center;
+    height: 150px;
+    vertical-align: middle;
+}
+
+.new-text{
+  padding-top: 50px;
+  font-family: 'Patua One', cursive;
+  font-size: 5rem;
+}
+
+.header2{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul{
+  list-style-type: none;
+  list-style-position: inside;
+}
+li{
+  list-style-position: inside;
+}
+
+p{
+  display: inline;
+}
