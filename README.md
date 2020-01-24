@@ -10,6 +10,7 @@ A Ruby-Rails based app that uses a one-to-many relationship products and product
 
 ![enter image description here](https://i.imgur.com/KW12jKc.jpg "read")
 
+## Opening the App
  1. Click the link shown in the above photo and download the file.
  2. Unzip the file and navigate to the folder via your terminal or command line application.
  3. Type $ // Bundle // to install all the gems used in the project.
@@ -17,15 +18,14 @@ A Ruby-Rails based app that uses a one-to-many relationship products and product
  4. Type $ // rails s  // to start the server, which will be available on your computer at localhost:3000.
  5. For purposes of these instructions, anything inside of // is what is to be typed in the terminal. If the instruction says // hello // for example, you'd type just the word hello in the terminal.
 
-### Specifications:
-
-|Input|Output|
-|---|---|
-|---|---|
-|---|---|
-|---|---|
-|---|---|
-|---|---|
+## Assigning Admin privileges
+1. Go to the web app in your browser found at localhost:3000 after following the above 5 steps.
+2. Click Sign Up at the top nav bar to make an account. Enter email and password / password confirmation.
+3. Now we will make this account have admin privileges by first typing // rails c // into the terminal to open the rails console.
+4. Type // @user = User.first // to target your newly made account.
+5. Type // @user.admin = true // to turn on your admin status.
+6. Type // @user.save // to save your new admin status.
+7. Your account will now have admin privileges - including adding, editing and deleting products and editing, updating, and deleting reviews.
 
 ### Technologies Used
 
