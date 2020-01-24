@@ -4,7 +4,7 @@ Review.destroy_all
 describe 'the product creation path', {:type => :feature} do
   it 'takes the user to the homepage where they can create a product' do
     visit '/'
-    save_and_open_page
+    # save_and_open_page
     click_link('Create new product')
     fill_in('Name' , :with => 'Rat Milk', )
     fill_in('Cost', :with => '100')
