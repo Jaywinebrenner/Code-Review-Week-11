@@ -1,13 +1,17 @@
 
 
-<h1>Pages#home</h1>
 
 
-<% if current_user %>
-<%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+<h1>Marios Discount Specialty Foods</h1>
 
-<% else %>
-<%= link_to "Sign up", new_user_registration_path %> |
-<%= link_to "Sign in", new_user_session_path %>
+<% if user_signed_in? %>
 
-<% end %>
+<%= link_to "Home", '/' %> |
+Logged in as <%= current_user.email %> | <%= link_to "Sign out", destroy_user_session_path, method: :delete %> <BR>
+
+  <% else %>
+  <%= link_to "Home", '/' %> | <%= link_to "Sign up", new_user_registration_path %> |
+  <%= link_to "Sign in", new_user_session_path %>
+  <% end %>
+
+  <hr>
