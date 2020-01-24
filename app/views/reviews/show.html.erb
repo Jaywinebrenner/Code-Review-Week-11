@@ -1,4 +1,13 @@
-<h1>Review: <%= @review.author %></h1>
+<%= link_to "Home", '/' %> |
+Logged in as <%= current_user.email %> | <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+<div class="new-header">
+  <h1 class="new-text">Product review</h1>
+</div>
+<hr class="hr-thick">
+<hr class="hr-thin">
+
+
+<h1>Review written by: <%= @review.author %></h1>
 <h2>Product: <%= @product.name %></h2>
 <h3><%= @review.author %></h3>
 <h3><%= @review.content_body %></h3>

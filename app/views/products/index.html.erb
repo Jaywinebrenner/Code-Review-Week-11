@@ -31,7 +31,10 @@ Logged in as <%= current_user.email %> | <%= link_to "Sign out", destroy_user_se
 <div class="header-middle">
   <h2 id="middle-text">Have a Look at Mario's Edible Products!</h2>
 </div>
+
+<% if current_user.admin  == true%>
 <h4 id="create-new_product"><%= link_to "Create new product", new_product_path %></h4>
+<% end %>
 
 <div class="container">
   <div class="row">

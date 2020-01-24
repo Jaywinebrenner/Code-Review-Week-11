@@ -1,7 +1,7 @@
 class ReviewsController < ApplicationController
 
-#   before_action :authorize, only: [:new, :create, :edit, :update, :destroy]
-# before_action :authorize_admin, only: [:new, :create, :edit, :update, :destroy]
+  before_action :authorize, only: [:edit, :destroy]
+# before_action :authorize_admin, only: [:new, :create, :show]
 
 
   def new

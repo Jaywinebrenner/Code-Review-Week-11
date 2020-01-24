@@ -1,3 +1,11 @@
+<%= link_to "Home", '/' %> |
+Logged in as <%= current_user.email %> | <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+<div class="new-header">
+  <h1 class="new-text">Let's Investigate a product and the product reviews</h1>
+</div>
+<hr class="hr-thick">
+<hr class="hr-thin">
+
 <h1><%= @product.name %></h1>
 <h3><%= @product.cost %> $ USD + shipping and handling</h3>
 <h3>Ships from: <%= @product.country_of_origin %></h3>
@@ -26,3 +34,6 @@
                                        :method => "delete"} %></p>
 <p> | </p>
 <p><%= link_to "Return to products", products_path %></p>
+
+<br>
+<br>
