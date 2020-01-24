@@ -1,5 +1,8 @@
 class ProductsController < ApplicationController
 
+  before_action :authorize, only: [:new, :create, :edit, :update, :destroy]
+before_action :authorize_admin, only: [:new, :create, :edit, :update, :destroy]
+
   def index
     @products = Product.all
     @usa_products = Product.buy_usa
